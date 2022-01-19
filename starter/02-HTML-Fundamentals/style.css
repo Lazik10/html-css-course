@@ -1,0 +1,191 @@
+* {
+    /* universal selector which applies to all elements without inheritance */
+    /* it has lowest priority */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: #444;
+    border: none;
+    background-color: white;
+}
+
+.container {
+    width: 1200px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+}
+
+.main-header {
+    background-color: #f7f7f7;
+    /* padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px; */
+    padding: 20px 50px;
+    height: 80px;
+    margin-bottom: 60px;
+}
+
+aside {
+    background-color: #46daff;
+    border-top: 5px solid #b3edff;
+    border-bottom: 5px solid #00c3ff;
+
+    padding: 50px 0px;
+
+    width: 500px;
+}
+
+/* h1, h2, h3, h4, p, li {
+    font-family: sans-serif;
+    color: #444;
+} */
+
+h1, h2, h3 {
+    color: #00c3ff;
+}
+
+h1 {
+    /* color: #00c3ff; */
+    font-size: 26px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    /* background-color: orange; */
+    position: relative;
+}
+
+h2::after {
+    content: "TOP";
+    color: ffe70e;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    position: absolute;
+    top: -15px;
+    right: -25px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+li:last-child {
+    margin-bottom: none;
+}
+
+/* footer p {
+    font-size: 16px;
+} */
+
+#author {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.post-header {
+    margin-bottom: 30px;
+}
+
+#copyright {
+    font-size: 8px;
+}
+
+.related-author {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list {
+    list-style: none;
+}
+
+.html-image {
+    width: 100%;
+    height: auto;
+}
+
+/* .first-list {
+    font-weight: bold;
+} */
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+/* nth pos, odd, even */
+li:nth-child(2) {
+    color: red;
+}
+
+a:link {
+    color: #00c3ff;
+    text-decoration: none;
+}
+
+a:visited {
+    color:aquamarine
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline dotted orangered;
+}
+
+a:active {
+    background-color: black;
+    font-style: italic;
+}
+
+/* PSeUDO ELEMETNS */
+h1::first-letter {
+    font-size: 40px;;
+}
+
+p::first-line {
+    color: red;
+}
+
+/* adjustment elements */
+h3 + p {
+    font-size: 10px;
+}
